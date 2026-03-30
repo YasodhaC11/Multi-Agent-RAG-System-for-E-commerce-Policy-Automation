@@ -78,13 +78,18 @@ export OPENAI_API_KEY=your_openai_api_key
 python ingest.py
 ```
 
-### 5. Run System
+### 5. Run Retrieval
+
+```bash
+python retriever.py
+```
+### 6. Run System
 
 ```bash
 python main.py
 ```
 
-### 6. Run Evaluation
+### 7. Run Evaluation
 
 ```bash
 python evaluate.py
@@ -147,8 +152,12 @@ python evaluate.py
 ├── ingest.py          # Document chunking and ChromaDB ingestion
 ├── main.py            # Entry point; runs the multi-agent pipeline
 ├── evaluate.py        # Evaluation script
-├── evaluation_dataset # Evaluation dataset
-├── policies/          # Policy documents (.txt)
+├── agents/
+│   ├── triage.py
+│   ├── retriever.py
+│   ├── generator.py
+│   └── verifier.py
+├── data/              # Policy documents (.txt)
 ├── requirements.txt
 └── README.md
 ```

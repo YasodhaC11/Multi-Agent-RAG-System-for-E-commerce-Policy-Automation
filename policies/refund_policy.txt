@@ -1,0 +1,166 @@
+AMAZON.IN REFUND POLICY
+=======================
+
+1. When does Amazon initiate a refund?
+
+Amazon initiates a refund once your returned package is received at our Fulfilment Center. We process refund requests within 13 days of successful pickup.
+
+Please note:
+  * The refund is initiated by Amazon only once the item is picked up AND reaches our Fulfilment Center.
+  * Simply scheduling a pickup or handing the item to the pickup agent does not immediately trigger the refund.
+  * Please read our Returns Policy for more details on eligibility.
+  * During peak periods such as sale events or public holidays, processing may take slightly longer than usual.
+
+
+2. What are the refund timelines by payment method?
+
+The time taken for your refund to be processed depends on your payment method. Refer to the table below for time taken after Amazon has initiated the refund request.
+
+PREPAID ORDERS:
+  * Amazon Pay Balance          – Up to 4 Hours
+  * Amazon Voucher              – Up to 4 Hours
+  * Credit / Debit Card         – Up to 5 Working Days
+  * Net Banking (Bank Account)  – Up to 5 Working Days
+  * UPI Linked Bank Account     – Up to 5 Working Days
+  * Amazon Pay Later            – Up to 5 Working Days
+
+PAY ON DELIVERY ORDERS:
+  * Amazon Pay Balance          – Up to 4 Hours
+  * Transfer to Bank Account (NEFT) – Up to 5 Working Days
+  * Paper Cheque                – Up to 10 Working Days
+
+Note:
+  * Working days exclude Sundays and public holidays.
+  * If you haven't received your refund within the above time frames, please reach out to your bank with the RRN (Refund Reference Number) displayed in the Refunds section under Transactions history.
+  * To check the status of your refund, go to Your Orders, click on the relevant order, and select View Return/Refund Status.
+
+
+3. How do I check the status of my refund?
+
+To check the status of your refund:
+
+  1. Go to Your Orders on Amazon.in or the mobile app.
+  2. Click on the relevant order.
+  3. Select View Return/Refund Status.
+
+Refund status descriptions:
+  * Refund Initiated     – Amazon has triggered the refund to your payment provider.
+  * Refund Processing    – The refund is being processed by your bank or payment provider.
+  * Refund Completed     – The amount has been successfully credited to your account.
+
+If the status shows "Refund Completed" but you have not received the amount, contact your bank with the RRN (Refund Reference Number) for further assistance.
+
+
+4. How do I add or update my bank account for refunds?
+
+If you wish to receive your refund in your bank account, make sure to add or update the correct bank account details. Follow the steps below:
+
+To add your bank account via website:
+  1. Go to Your Orders.
+  2. Click on the order you want to return.
+  3. Select Return or Replacement items option.
+  4. Select 'Refund to your bank account.'
+  5. Select 'Choose a bank account.'
+  6. Select 'Add a new bank account' and enter your bank account details.
+
+Note:
+  * Ensure your bank account details (account number and IFSC code) are entered correctly to avoid refund failures.
+  * Refunds via NEFT can only be processed to Indian bank accounts.
+  * If a refund fails due to incorrect bank details, Amazon will attempt to contact you to update the information.
+
+
+5. How are Amazon Pay Later refunds processed?
+
+Your refund process for Amazon Pay Later depends on whether you have made any payments:
+
+  * If you have NOT paid any installment:
+    Amazon credits your Amazon Pay Later limit with the total order value.
+
+  * If you HAVE already made a payment:
+    Amazon credits the amount back to your bank account and reinstates your credit limit.
+
+Visit the Amazon Pay Later Help page to learn more.
+
+Note:
+  * Reinstatement of credit limit may take up to 5 working days after the refund is processed.
+  * In case of partial payments, only the amount paid will be refunded to your bank account; the remaining credit limit will be reinstated accordingly.
+
+
+6. How are refunds processed for EMI purchases?
+
+If you've already paid an EMI, the amount paid will be refunded to your credit card and the loan will be cancelled.
+
+EMI closure details:
+  * Bajaj Finserv (BFL Card):
+    Contact Bajaj Finserv directly or write to wecare@bajajfinserv.in
+
+  * Any other credit card:
+    Contact your card-issuing bank. Please note that your bank may charge nominal pre-closure charges if you have already paid an EMI.
+
+Visit the Easy Monthly Installments (EMI) Help Page to learn more.
+
+Note:
+  * EMI refund timelines may vary depending on your bank or financing partner.
+  * Pre-closure charges, if applicable, are levied by the bank and are not covered by Amazon.
+  * If the product was purchased using a No-Cost EMI offer, any applicable interest waiver may be reversed upon return.
+
+
+7. How are refunds processed for Seller-Fulfilled orders?
+
+Any refund for orders sold and shipped by our seller partners needs to be initiated by the seller directly.
+
+  * The terms and conditions of refunds may vary from seller to seller and are available on the Seller Details page. You can access it by selecting the Seller name on the product page.
+  * Visit the Seller-Fulfilled Orders Help Page to learn more about contacting sellers.
+
+A-to-Z Guarantee:
+All seller-fulfilled orders are covered by our A-to-Z Guarantee. Our Guarantee offers reimbursement and protection for instances when a seller is unable to resolve a missing or incorrect order.
+
+You can file an A-to-Z Guarantee Claim if:
+  * The seller does not respond to your query within 3 business days.
+  * The seller refuses to issue a refund for a valid return.
+  * Your order was not delivered and the seller cannot provide proof of delivery.
+
+Visit the A-to-Z Guarantee Help Page to learn more.
+
+
+8. What happens if my refund amount is incorrect?
+
+If you believe the refund amount you received is incorrect, follow these steps:
+
+  1. Go to Your Orders and locate the relevant order.
+  2. Select View Return/Refund Status to review the refund details.
+  3. If there is a discrepancy, contact Amazon Customer Support via Chat, Phone, or Email.
+
+Common reasons for partial refunds:
+  * Original shipping charges may be non-refundable if the order was below ₹499.
+  * Promotional discounts or coupons applied at the time of purchase may be deducted from the refund.
+  * Seller-specific refund policies may result in partial amounts for marketplace orders.
+
+
+9. What happens if my refund fails?
+
+A refund may fail due to:
+  * Incorrect or outdated bank account details.
+  * A closed or inactive bank account.
+  * Technical issues with the payment provider.
+
+If your refund fails:
+  * Amazon will notify you via email or SMS.
+  * You will be prompted to update your bank account details or choose an alternate refund method.
+  * Once updated, the refund will be re-initiated within 2 to 3 business days.
+
+If the issue persists, contact Amazon Customer Support with your order ID and RRN for assistance.
+
+
+10. How do I contact Amazon for refund-related issues?
+
+If you are unable to resolve your refund issue through Your Orders or the Returns Centre, you can reach Amazon Customer Support via:
+
+  * Chat Support  – Available 24/7 on the Amazon.in website and mobile app.
+  * Phone Support – Call Amazon's toll-free customer care number (available on the Contact Us page).
+  * Email Support – Submit a request through the Help & Customer Service section.
+
+Tips for faster resolution:
+  * Keep your Order ID and RRN (Refund Reference Number) ready before contacting support.
+  * Check Your Orders for real-time refund status before reaching out.
+  * For bank-related delays, contact your bank directly with the RRN.

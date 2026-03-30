@@ -1,7 +1,6 @@
 import os
 import json
 from typing import TypedDict, List
-
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -13,7 +12,6 @@ from langgraph.graph import StateGraph, END
 # =========================
 # STATE
 # =========================
-
 class State(TypedDict):
     ticket_text: str
     order_context: dict
@@ -29,7 +27,7 @@ class State(TypedDict):
 
 
 # =========================
-#  MODELS
+# MODELS
 # =========================
 
 llm = ChatOpenAI(
@@ -45,33 +43,37 @@ vectordb = Chroma(
     embedding_function=embeddings
 )
 
-retriever = vectordb.as_retriever(search_kwargs={"k": 4})
+retriever = vectordb.as_retriever(
+    search_type="mmr",
+    search_kwargs={"k": 4, "fetch_k": 10}
+)
+
 
 # =========================
-#  NODE 1: TRIAGE
+# NODE 1: TRIAGE
 # =========================
 
 def triage_node(state: State):
     prompt = f"""
-    You are a strict JSON generator.
+You are a strict JSON generator.
 
-    Return ONLY valid JSON. No explanation. No text before or after.
+Return ONLY valid JSON. No explanation. No text before or after.
 
-    Schema:
-    {{
-     "issue_type": "string",
-     "confidence": float (0 to 1),
-     "clarifying_questions": list of strings
-    }}
+Schema:
+{{
+  "issue_type": "string (e.g. refund, return, replacement, damaged, wrong_item, shipping, other)",
+  "confidence": float between 0 and 1,
+  "clarifying_questions": list of strings (empty list if no clarification needed)
+}}
 
-    Ticket: {state['ticket_text']}
-    Order: {state['order_context']}
-    """
+Ticket: {state['ticket_text']}
+Order: {state['order_context']}
+"""
     response = llm.invoke(prompt)
 
     try:
         result = json.loads(response.content)
-    except:
+    except Exception:
         result = {
             "issue_type": "unknown",
             "confidence": 0.5,
@@ -81,8 +83,7 @@ def triage_node(state: State):
     return {
         "classification": result,
         "clarifying_questions": result.get("clarifying_questions", []),
-        "retry_count": 0
-    }
+        "retry_count": 0  }
 
 
 # =========================
@@ -90,14 +91,19 @@ def triage_node(state: State):
 # =========================
 
 def retriever_node(state: State):
-    docs = retriever.invoke(state["ticket_text"])
+    issue_type = state.get("classification", {}).get("issue_type", "")
+    ticket = state["ticket_text"]
+    category = state.get("order_context", {}).get("item_category", "")
+    query = f"{category} {issue_type} {ticket}".strip()
+
+    docs = retriever.invoke(query)
 
     retrieved = []
     for d in docs:
         retrieved.append({
             "text": d.page_content,
-            "document": d.metadata.get("document"),
-            "chunk_id": d.metadata.get("chunk_id")
+            "document": d.metadata.get("document", "unknown"),
+            "chunk_id": d.metadata.get("chunk_id", "N/A")
         })
 
     return {"retrieved_docs": retrieved}
@@ -108,79 +114,92 @@ def retriever_node(state: State):
 # =========================
 
 def generator_node(state: State):
-    context = "\n\n".join([d["text"] for d in state["retrieved_docs"]])
+    context = "\n\n".join(
+        f"[Source: {d['document']} | Chunk: {d['chunk_id']}]\n{d['text']}"
+        for d in state["retrieved_docs"]
+    )
 
     prompt = f"""
-You are a STRICT policy-based support agent.
+You are a STRICT policy-based e-commerce support agent.
 
 RULES:
-- Use ONLY provided context
-- Every claim MUST include citation
-- If insufficient info → needs_escalation
-- Output ONLY JSON
+- Use ONLY the provided policy context below.
+- Every claim in your rationale MUST reference a document and chunk_id from context.
+- If context is insufficient to make a decision → use "needs_escalation".
+- Output ONLY valid JSON. No explanation outside JSON.
 
-Context:
+Policy Context:
 {context}
 
-Ticket:
+Customer Ticket:
 {state['ticket_text']}
 
 Order Context:
-{state['order_context']}
+{json.dumps(state['order_context'])}
 
-JSON:
+Return this exact JSON structure:
 {{
- "decision": "approve | deny | partial | needs_escalation",
- "rationale": "...",
- "citations": [
-    {{"document": "...", "chunk_id": "..."}}
- ],
- "customer_response": "...",
- "internal_notes": "..."
+  "decision": "approve | deny | partial | needs_escalation",
+  "rationale": "Detailed explanation referencing policy context",
+  "citations": [
+    {{"document": "document_name", "chunk_id": "chunk_id_value"}}
+  ],
+  "customer_response": "Polite response to send to the customer",
+  "internal_notes": "Notes for internal support team"
 }}
 """
 
     response = llm.invoke(prompt)
 
+
     try:
-        return json.loads(response.content)
-    except:
-        return {"decision": "needs_escalation"}
+        result = json.loads(response.content)
+    except Exception:
+        result = {}
+
+    return {
+        "decision": result.get("decision", "needs_escalation"),
+        "rationale": result.get("rationale", ""),
+        "citations": result.get("citations", []),
+        "customer_response": result.get("customer_response", ""),
+        "internal_notes": result.get("internal_notes", "")
+    }
 
 
 # =========================
-#  NODE 4: VERIFIER
+# NODE 4: VERIFIER
 # =========================
 
 def verifier_node(state: State):
     retry_count = state.get("retry_count", 0)
 
-    #  1. Clarifying questions → stop
+    # 1. Clarifying questions needed → stop and ask customer
     if state.get("clarifying_questions"):
         return {"decision": "needs_clarification"}
 
-    #  2. Conflict handling
-    if state["order_context"].get("seller_policy_override"):
+    # 2. Seller policy conflict → escalate
+    if state.get("order_context", {}).get("seller_policy_override"):
         return {"decision": "needs_escalation"}
 
-    #  3. Minimum evidence check
+    # 3. Not enough retrieved docs → escalate
     if len(state.get("retrieved_docs", [])) < 2:
         return {"decision": "needs_escalation"}
 
-    #  4. Missing citations
-    if not state.get("citations"):
+    # 4. Missing citations → retry
+    citations = state.get("citations", [])
+    if not citations:
         return {"decision": "retry", "retry_count": retry_count + 1}
 
-    #  5. Validate citation fields
-    for c in state["citations"]:
+    # 5. Invalid citation fields → retry
+    for c in citations:
         if not c.get("document") or not c.get("chunk_id"):
             return {"decision": "retry", "retry_count": retry_count + 1}
 
-    #  6. Weak rationale
+    # 6. Weak rationale → retry
     if len(state.get("rationale", "")) < 20:
         return {"decision": "retry", "retry_count": retry_count + 1}
 
-    #  7. Retry limit
+    # 7. Retry limit reached → escalate
     if retry_count >= 2:
         return {"decision": "needs_escalation"}
 
@@ -188,35 +207,27 @@ def verifier_node(state: State):
 
 
 # =========================
-#  ROUTING
+# ROUTING
 # =========================
 
 def route_after_verifier(state: State):
     decision = state.get("decision")
     retry_count = state.get("retry_count", 0)
 
-    print(f"Routing decision: {decision}, retries: {retry_count}")
+    print(f"[Router] Decision: {decision} | Retries: {retry_count}")
 
-    # Safety: prevent infinite loop
     if retry_count >= 2:
         return END
 
     if decision == "retry":
         return "generate"
 
-    if decision == "needs_clarification":
-        return END
-
-    if decision == "needs_escalation":
-        return END
-
-    if decision == "valid":
-        return END
-
-    # fallback
+    # All terminal states → END
     return END
+
+
 # =========================
-#  BUILD GRAPH
+# BUILD GRAPH
 # =========================
 
 builder = StateGraph(State)
@@ -238,7 +249,7 @@ graph = builder.compile()
 
 
 # =========================
-#  RUN SAMPLE
+# RUN SAMPLE
 # =========================
 
 if __name__ == "__main__":
@@ -251,7 +262,8 @@ if __name__ == "__main__":
         }
     }
 
+    print("\n Running pipeline...\n")
     result = graph.invoke(input_data)
 
-    print("\n✅ FINAL OUTPUT:\n")
+    print("\n FINAL OUTPUT:\n")
     print(json.dumps(result, indent=2))

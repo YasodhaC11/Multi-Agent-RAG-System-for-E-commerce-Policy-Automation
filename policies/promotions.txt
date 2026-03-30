@@ -6,3 +6,44 @@ Coupons must be used before expiry.
 
 Section 3: Restrictions
 Coupons cannot be applied after order placement.
+
+
+Lightning Deal
+A Lightning Deal is a promotion in which a limited number of discounts are offered on an item for a short period. Lightning Deals are time-sensitive, so complete your order as soon as possible. Visit the Lightning deals page to know how to identify lightning deals.
+
+Cashback Promotions
+Sitewide promotions are periodically run on Amazon.in that provide a fixed percentage cash back for purchases made using specific credit cards. Usually, the eligibility for the cash back is a minimum order amount.
+
+Note: Promotional codes (including those added directly in your account) cannot be used to purchase Gift Cards.
+
+Promotional Codes for Amazon Prime
+Note: Promo codes are redeemable only on select credit cards of respective banks, and works only once per user.
+Promo Codes for Amazon Prime are provided by companies that Amazon partners with to offer limited period Prime membership to customers. For example, Axis Bank, HDFC Bank, ICICI Bank, HDFC Diners, Nestle KitKat, Clarks footwear, Intermiles, Thriwe, BigCity Promotions, Samsung provide promo codes to select customers. Customers can redeem this promo code at Amazon Prime Promotions page. Refer to the About Using a Promotional Code for Amazon Prime Help page to apply promo codes.
+
+Buy More, Save More
+Amazon Prime members can now get cashback in the form of Amazon Pay balance on buying two or more eligible items in the same order. Visit Buy more, Save more Help page to know the benefits.
+
+Amazon Coupons
+Amazon coupons help you save big on your purchases. Collect from a variety of coupons available on our website and get instant discount at the time of checkout. You can discover coupons through the Coupons Home Page, product detail page, search and in product listing pages. Visit Coupons - FAQ page for questions on coupons.
+
+Amazon Pay Cashback Offer
+
+Note: Amazon Pay Cashback only applies to prepaid orders.
+Amazon Pay cashback offer is mentioned in the Special Offers widget on the product details page. You need to meet the eligibility criteria as described in the offer message and as per the terms and conditions of the offer to avail the cashback. The cashback is credited to your Amazon Pay balance via an Amazon Gift Card (issued by QwikCilver Solutions Private Limited). Visit Amazon Pay Cashback Offer - FAQs and Amazon Pay Gift Cards Help pages to know about cashback and gift cards.
+
+Limited period offers
+Amazon customers can now get cashback in the form of Amazon Pay balance on buying items from a selected list of eligible items. The cashback is being provided if the customer makes a second purchase within a specified time period of the first purchase. To know more, visit the Limited period offer: Get extra cashback on selected items page.
+
+Note: This offer is subject to the offer terms and conditions available here. The offer can be combined with other offers available on Amazon.in.
+Instant Bank Discounts
+Customers making a purchase on Amazon.in using payment instruments mentioned in the bank offer, and for eligible products, can avail a discount on the item price in accordance with the offer. Refer to Instant Bank Discounts - FAQ page for more information.
+
+Rewards
+Rewards are additional offers provided to customers while placing an order. You can view and collect rewards from the rewards page. Click on a reward to know the offer details and steps to redeem the award.
+
+Note: Rewards/Coupons are subject to change, refer to the individual Terms and Conditions for more information.
+Exchange Offer
+Third party buyback partners provide the exchange offer you receive on Amazon and the proposed exchange value. The offer may vary depending on the brand and model selected, your delivery location and availability of the offer by the buyback partner at the time of placing the order. Refer Exchange Offer - Frequently Asked Questions Help page to know how to avail exchange offers.
+
+Deals
+For information on a current sale, refer to the About Amazon Live Sale Events Help page on live deals, promotions, cashback and more.

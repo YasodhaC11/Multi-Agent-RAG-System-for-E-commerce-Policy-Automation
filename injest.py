@@ -16,7 +16,7 @@ def load_documents():
     docs = []
     for file in os.listdir(POLICY_DIR):
         if file.endswith(".txt"):
-            loader = TextLoader(os.path.join(POLICY_DIR, file))
+            loader = TextLoader(os.path.join(POLICY_DIR, file),encoding="utf-8")
             docs.extend(loader.load())
     return docs
 
@@ -26,8 +26,8 @@ def load_documents():
 # =========================
 def split_documents(documents):
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=200,
-        chunk_overlap=50
+        chunk_size=500,
+        chunk_overlap=100
     )
     return splitter.split_documents(documents)
 

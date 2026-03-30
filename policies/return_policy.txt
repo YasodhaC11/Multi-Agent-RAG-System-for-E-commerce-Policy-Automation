@@ -13,3 +13,199 @@ If a non-returnable item is delivered in damaged condition, a refund or replacem
 
 Section 4: Return Process
 Customers must initiate a return request via the platform within the return window.
+
+AMAZON.IN RETURN POLICY
+=======================
+
+1. What can I return?
+
+Items listed on Amazon.in that are identified as 'returnable' on the product detail page and within the 'return window' period. Products eligible for return will have a logo on the product details page which mentions the return window and return category as per the product. (Example: 10 Days Returnable, 7 Days Return & Exchange etc.).
+
+To know about the "non-returnable" categories and the specific return windows for categories eligible for return, please refer to Amazon.in Returns policy. This page will have more information on what kind of products are returnable within the applicable return window and how to report an issue with Smartphone, Tablet, Laptop, Television, Air Conditioner, Refrigerator, Washing Machine and Microwave.
+
+Products that are physically damaged, defective, have missing parts, or are different from their description in the product details page are eligible for return. You may also return products if there is a change of mind and you do not wish to keep the item with you. Refer to the Damaged or Defective Product - FAQ page for more information.
+
+Items with missing parts. You may request for a refund:
+  * If the item is missing and the box is tampered
+  * If you have received an empty package
+  * If part of the order was missing (accessory)
+
+To validate your identity for refunds, you may need to share identity proof with us. Please refer to our Privacy Policy to understand how your data will be processed. Please DO NOT share Aadhar data.
+
+Note:
+  * Sometimes the order is split into multiple shipments. This means you won't get all orders in one go. The packages would be delivered to you according to the date mentioned on Your Orders page.
+  * If the bookmark is missing from the book, please be informed that although we try to include bookmarks with several book orders, you may not receive it for every book.
+  * Return eligibility is determined at the time of the return request and not at the time of purchase. Products must be in their original condition, with all original tags, accessories, and packaging intact.
+  * Items purchased during sale events (such as the Great Indian Festival or Prime Day) follow the same return policy unless otherwise specified on the product page.
+
+
+2. What are non-returnable items?
+
+Some items of consumable nature (like wax candles, pet food and grooming products, cleaning products, fertilizers, etc.) are non-returnable. For a full list of non-returnable categories and products, and the specific return windows for categories eligible for return, visit Amazon.in Returns policy.
+
+Additional non-returnable items include:
+  * Digital products such as e-books, software downloads, or digital gift cards once accessed or redeemed
+  * Customised or personalised products made to order
+  * Hazardous materials or products with flammable liquids or gases
+  * Items marked as "non-returnable" on the product detail page at the time of purchase
+  * Underwear, innerwear, and swimwear for hygiene reasons
+  * Perishable goods including fresh food, flowers, or plants
+
+Note: Even for non-returnable items, if the product arrives in a damaged or defective condition, you may still be eligible for a refund or replacement. Please refer to Section 3 (Exceptions) for more details.
+
+
+3. What are the return window periods by category?
+
+Return windows vary by product category. Below are the standard return windows:
+
+  * Electronics (Mobiles, Laptops, Tablets): 7 days
+  * Large Appliances (AC, Refrigerator, Washing Machine): 7 days (installation required before raising return)
+  * Clothing, Footwear & Accessories: 30 days
+  * Books: 10 days
+  * Furniture: 7 days (assembly required before raising return)
+  * Toys & Baby Products: 10 days
+  * Beauty & Personal Care (non-hygiene): 10 days
+  * Sports & Fitness Equipment: 10 days
+  * Home & Kitchen: 10 days
+
+Note: Always check the product detail page for the exact return window applicable to your item, as it may differ from the general category window.
+
+
+4. How to return items?
+
+To return an eligible item:
+
+  1. Sign in to Amazon.in
+  2. Access Your Orders.
+  3. Select the item you want to return or replace.
+  4. Select a reason from the menu and follow the on-screen instructions to continue.
+
+Visit How to schedule a return to learn more.
+
+Products fulfilled by third-party (Marketplace) sellers have the message "Sold and Shipped by (seller name)" on the product detail page. Visit the Return orders placed with a Third-party seller page to learn more.
+
+If a seller fails to address your query in three business days, you can file an A-to-Z Guarantee claim.
+
+Additional return guidelines:
+  * Both your shipping address and the item must meet our return eligibility requirements.
+  * If your address is not eligible for Pickup, a Self-Return option will be provided. For more details, visit Return Pick up and Self Ship Guidelines.
+  * Once the return is processed, the refund will be issued in accordance with the Amazon.in Refund Policy.
+  * For Pay on Delivery orders, refunds will be processed either to your bank account (via National Electronic Funds Transfer (NEFT)) or to your Amazon account (as Amazon Pay balance).
+  * You will receive an email and SMS confirmation once your return request is successfully placed.
+  * Ensure that the item is properly packed before handing it over to the pickup agent to avoid transit damage.
+
+
+5. Where can I check the status of my return?
+
+To check the status of your return/refund:
+
+  1. Access Your Orders.
+  2. Locate the order which you have returned and select Return/Refund status.
+
+You can also manage your Returns from the Returns Center.
+
+Return status descriptions:
+  * Return Requested – Your return request has been submitted and is pending approval.
+  * Pickup Scheduled – A pickup has been arranged and the agent will collect your item.
+  * Item Picked Up – The item has been collected and is on its way to the seller/warehouse.
+  * Refund Initiated – The refund has been triggered and will reflect in your account within the applicable time frame.
+  * Refund Completed – The amount has been successfully credited to your original payment method or Amazon Pay balance.
+
+
+6. What are the refund timelines?
+
+Once your return is processed and the item is received and verified by Amazon or the seller, refunds are issued as follows:
+
+  * Amazon Pay Balance: Within 2 hours
+  * UPI: Within 2 hours
+  * Debit Card / Net Banking: 3 to 5 business days
+  * Credit Card: 3 to 5 business days (may take up to 1 billing cycle depending on the bank)
+  * Pay on Delivery (NEFT): 3 to 5 business days after bank details are submitted
+
+Note: Refund timelines may vary during peak periods such as sale events or public holidays.
+
+
+7. How can I return a Gift?
+
+For items eligible for refund or replacement as per return policy, you can also return the gift item in exchange for an Amazon Pay Gift Card (if the gift sender has sent a Gift Receipt to you). For guidance on returning a gift item using a gift receipt, visit Gift Receipts.
+
+Note:
+  * The refund for a gift return will be issued as an Amazon Pay Gift Card to the recipient, not to the original purchaser.
+  * If no Gift Receipt was provided, please contact Amazon Customer Support to explore available options.
+
+
+8. How can I return a Gift Card?
+
+Gift cards once purchased cannot be cancelled or returned due to regulatory restrictions.
+
+Please refer to the Amazon Pay Gift Card page to know more about adding gift card balance to your account, redeeming a Gift card and restrictions.
+
+
+9. Can my order be replaced?
+
+You may request a replacement if your item:
+
+  * Arrives damaged or defective
+  * Doesn't match the product description on our website
+  * Is missing parts or accessories
+
+It will be eligible for a free replacement if the product is available with the same seller. Visit Amazon.in Replacement Policy to learn more.
+
+To know more about replacing Damaged/Defective products, visit Damaged, Defective Item FAQs.
+
+Note:
+  * If the same product is not available with the same seller, you will be offered a refund instead.
+  * Replacements are subject to stock availability and seller discretion.
+  * Replacement requests must be raised within the return window mentioned on the product page.
+
+
+10. Can the replacement be delivered to a different address?
+
+Replacements cannot be delivered to a different address. We recommend returning the item for a refund (if the product is eligible for return) and placing a new order with the new address.
+
+
+11. What can I do if I receive a wrong item?
+
+You can return or request a replacement for the wrong item. Please ensure the item is in its original condition, and still in its packaging to be eligible for a return. For more information, you can refer to the Help page: Wrong Product Delivered.
+
+Steps to report a wrong item:
+  1. Go to Your Orders and locate the affected order.
+  2. Select "Return or Replace Items."
+  3. Choose "Wrong item was sent" as the reason.
+  4. Follow the on-screen instructions to complete the request.
+
+Note: Amazon may request photo evidence of the wrong item received to process your return or replacement request faster.
+
+
+12. How can I request a refund for the standard shipping charge?
+
+If your original order was below ₹499, a ₹40 shipping fee applies. Since the replacement is sent via standard shipping and the original order didn't qualify for free shipping, the charge is non-refundable.
+
+However, the shipping charge may be refunded if:
+  * The return was initiated due to an error on Amazon's part (e.g., wrong item sent, item not as described).
+  * The seller is found to be at fault after an investigation.
+
+
+13. How can I request a refund/return due to missing warranty card/user manual in the package?
+
+A refund or replacement isn't required for missing warranty cards or manuals. The invoice is sufficient to claim the warranty. You can check if these items are included by reviewing the "Included Components" or "What's in the Box" section, and the warranty card note under "About the Item" on the product page.
+
+Note: This applies only to Large Appliances, Home Entertainment products, and Air Coolers.
+
+If you still believe a critical component is missing from your package (other than warranty card or manual), you may raise a return request citing "Missing Accessories" as the reason.
+
+
+14. How do I contact Amazon Customer Support for return-related issues?
+
+If you are unable to resolve your return issue through Your Orders or the Returns Centre, you can reach Amazon Customer Support via:
+
+  * Chat Support: Available 24/7 on the Amazon.in website and mobile app.
+  * Phone Support: Call Amazon's toll-free customer care number (available on the Contact Us page).
+  * Email Support: Submit a request through the Help & Customer Service section.
+
+For issues with third-party (Marketplace) sellers, you can also escalate by filing an A-to-Z Guarantee Claim if the seller does not respond within 3 business days.
+
+Tips for faster resolution:
+  * Keep your order ID and item details ready before contacting support.
+  * If the item is damaged, have photos ready to share with the support team.
+  * Check Your Orders for real-time return/refund status before contacting support.
