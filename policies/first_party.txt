@@ -1,0 +1,5 @@
+Section 1: Marketplace Orders
+Seller-specific policies may apply.
+
+Section 2: Conflict Handling
+If seller policy differs from platform policy, escalation is required.

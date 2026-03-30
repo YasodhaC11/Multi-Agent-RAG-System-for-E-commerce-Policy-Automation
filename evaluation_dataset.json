@@ -1,0 +1,105 @@
+[
+  {
+    "type": "standard",
+    "ticket_text": "I received a damaged shirt, need refund",
+    "order_context": {"item_category": "apparel", "order_status": "delivered"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "I want to cancel my order before shipping",
+    "order_context": {"order_status": "placed"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "My package is delayed",
+    "order_context": {"order_status": "shipped"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "Wrong item delivered",
+    "order_context": {"order_status": "delivered"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "Missing item in my order",
+    "order_context": {"order_status": "delivered"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "Refund not received yet",
+    "order_context": {"order_status": "returned"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "Delivery was late, want compensation",
+    "order_context": {"order_status": "delivered"}
+  },
+  {
+    "type": "standard",
+    "ticket_text": "Exchange my product",
+    "order_context": {"order_status": "delivered"}
+  },
+
+  {
+    "type": "exception",
+    "ticket_text": "Cookies melted, want refund but keep item",
+    "order_context": {"item_category": "perishable", "order_status": "delivered"}
+  },
+  {
+    "type": "exception",
+    "ticket_text": "Opened hygiene product, want return",
+    "order_context": {"item_category": "hygiene", "order_status": "delivered"}
+  },
+  {
+    "type": "exception",
+    "ticket_text": "Customized item, want refund",
+    "order_context": {"item_category": "custom", "order_status": "delivered"}
+  },
+  {
+    "type": "exception",
+    "ticket_text": "Final sale item, want exchange",
+    "order_context": {"item_category": "apparel", "order_status": "delivered"}
+  },
+  {
+    "type": "exception",
+    "ticket_text": "Perishable item spoiled",
+    "order_context": {"item_category": "perishable", "order_status": "delivered"}
+  },
+  {
+    "type": "exception",
+    "ticket_text": "Damaged but used item refund",
+    "order_context": {"item_category": "electronics", "order_status": "delivered"}
+  },
+
+  {
+    "type": "conflict",
+    "ticket_text": "Seller says no refund but platform allows it",
+    "order_context": {"seller_policy_override": true}
+  },
+  {
+    "type": "conflict",
+    "ticket_text": "Different refund rules for my region",
+    "order_context": {"shipping_region": "international"}
+  },
+  {
+    "type": "conflict",
+    "ticket_text": "Marketplace seller refusing replacement",
+    "order_context": {"fulfillment_type": "marketplace"}
+  },
+
+  {
+    "type": "not_in_policy",
+    "ticket_text": "Can I talk to delivery agent directly?",
+    "order_context": {}
+  },
+  {
+    "type": "not_in_policy",
+    "ticket_text": "Which warehouse shipped my order?",
+    "order_context": {}
+  },
+  {
+    "type": "not_in_policy",
+    "ticket_text": "Will product be available next month?",
+    "order_context": {}
+  }
+]

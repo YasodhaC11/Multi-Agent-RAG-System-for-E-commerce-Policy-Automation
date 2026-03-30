@@ -1,0 +1,5 @@
+Section 1: Lost Shipment
+If an order is marked delivered but not received, an investigation is initiated.
+
+Section 2: Resolution
+If confirmed lost, customer receives refund or replacement.

@@ -1,0 +1,8 @@
+Section 1: Usage
+Only one coupon per order.
+
+Section 2: Validity
+Coupons must be used before expiry.
+
+Section 3: Restrictions
+Coupons cannot be applied after order placement.
