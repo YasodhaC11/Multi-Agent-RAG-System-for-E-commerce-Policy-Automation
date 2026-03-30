@@ -147,12 +147,8 @@ python evaluate.py
 ├── ingest.py          # Document chunking and ChromaDB ingestion
 ├── main.py            # Entry point; runs the multi-agent pipeline
 ├── evaluate.py        # Evaluation script
-├── agents/
-│   ├── triage.py
-│   ├── retriever.py
-│   ├── generator.py
-│   └── verifier.py
-├── data/              # Policy documents (.txt)
+├── evaluation_dataset # Evaluation dataset
+├── policies/          # Policy documents (.txt)
 ├── requirements.txt
 └── README.md
 ```
